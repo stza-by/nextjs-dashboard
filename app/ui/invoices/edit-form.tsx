@@ -15,7 +15,7 @@ export default function EditInvoiceForm({
 }: {
     invoice: InvoiceForm;
     customers: CustomerField[];
-    action: (formData: FormData) => Promise<void>;
+    action: (formData: FormData) => Promise<any>;
 }) {
     return (
         <form action={action}>

@@ -13,7 +13,7 @@ export default function Form({
     onSubmit,
 }: {
     customers: CustomerField[];
-    onSubmit: (formData: FormData) => Promise<void>;
+    onSubmit: (formData: FormData) => Promise<any>;
 }) {
     return (
         <form action={onSubmit}>
