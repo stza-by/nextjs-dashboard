@@ -29,6 +29,7 @@ export function DeleteInvoice({ id }: { id: string }) {
     const deleteInvoiceWithId = deleteInvoice.bind(null, id);
 
     return (
+        // @ts-ignore
         <form action={deleteInvoiceWithId}>
             <button
                 type="submit"
