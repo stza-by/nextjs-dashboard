@@ -11,14 +11,11 @@ import {
 } from "@heroicons/react/24/outline";
 import { Button } from "@/app/ui/button";
 import { createInvoice, ActionState } from "@/app/lib/actions";
-import { error } from "console";
 
 const INITIAL_STATE: ActionState = { message: null, errors: {} };
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
     const [state, formAction] = useActionState(createInvoice, INITIAL_STATE);
-
-    console.log({ state });
 
     return (
         <form action={formAction}>
